@@ -32,7 +32,7 @@ const teamData: Testimonial[] = [
     id: 4,
     name: "Juan Diaz",
     designation: "juanda._._xd",
-    image: "/images/testimonials/auth-03.png",
+    image: "/images/testimonials/auth-03.png", 
   },
 ];
 
