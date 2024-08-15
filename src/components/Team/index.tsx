@@ -1,38 +1,42 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
+import Single from "./single";
 
-const testimonialData: Testimonial[] = [
+const teamData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
+    name: "Rodsac",
     designation: "Founder @TailGrids",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/testimonials/auth-01.png",
-    star: 5,
+
   },
   {
     id: 2,
-    name: "Devid Weilium",
+    name: "keisyvg_",
     designation: "Founder @UIdeck",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/testimonials/auth-02.png",
-    star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    name: "Keynner Santiago",
+    designation: "keynner_sm",
     image: "/images/testimonials/auth-03.png",
-    star: 5,
+  },
+  {
+    id: 4,
+    name: "Luis Ortega",
+    designation: "russo_180",
+    image: "/images/testimonials/auth-03.png",
+  },
+  {
+    id: 4,
+    name: "Juan Diaz",
+    designation: "juanda._._xd",
+    image: "/images/testimonials/auth-03.png",
   },
 ];
 
-const Testimonials = () => {
+const Team = () => {
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -43,8 +47,8 @@ const Testimonials = () => {
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          {teamData.map((testimonial) => (
+            <Single key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
       </div>
@@ -180,4 +184,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Team;
