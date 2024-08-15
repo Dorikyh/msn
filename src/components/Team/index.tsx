@@ -5,40 +5,53 @@ import Single from "./single";
 const teamData: Testimonial[] = [
   {
     id: 1,
-    name: "Rodsac",
-    designation: "@Rodsac",
+    name: "Joaquin Osio",
+    instagram: "@Rodsac",
     image: "/images/team/rodsac.jpg",
+    designation: "CEO"
 
   },
   {
     id: 2,
-    name: "keisyvg_",
-    designation: "@keisyvg_",
+    name: "Keisy Gonzales",
+    instagram: "@keisyvg_",
     image: "/images/team/key.jpg",
+    designation: "CMO"
   },
   {
     id: 3,
-    name: "Keynner Santiago",
-    designation: "@keynner_sm",
+    name: "Keynner S",
+    instagram: "@keynner_sm",
     image: "/images/team/notfound.jpg",
+    designation: "CTO"
   },
   {
     id: 4,
-    name: "Luis Ortega",
-    designation: "@russo_180",
+    name: "Luis Russo",
+    instagram: "@russo_180",
     image: "/images/team/notfound.jpg",
+    designation: "COO"
   },
   {
     id: 5,
-    name: "Juan Diaz",
-    designation: "@juanda._._xd",
+    name: "Juan David",
+    instagram: "@juanda._._xd",
     image: "/images/team/notfound.jpg", 
+    designation: "COO"
   },
   {
-    id: 5,
+    id: 6,
+    name: "Adalbergt H",
+    instagram: "@zuck",
+    image: "/images/team/notfound.jpg", 
+    designation: "3D"
+  },  
+{
+    id: 7,
     name: "Fabian Marquez",
-    designation: "@Dorikyh",
-    image: "/images/team/notfound.jpg", 
+    instagram: "@Dorikyh",
+    image: "/images/team/dorikyh.jpg", 
+    designation: "Dev"
   },
 ];
 

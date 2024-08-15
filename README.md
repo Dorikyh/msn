@@ -21,17 +21,9 @@ Collabs
 Fabian Marquez (Dev)
 Adalbergt Hernández (3D Desinger)
 
-### `npm start`
+### `npm run dev`
 
-Este comando es para ejecutar una prevista de la pagina en el navegador. 
+Este comando es para ejecutar una vista previa de desarrollo de la pagina en el navegador. 
 Abre [http://localhost:3000](http://localhost:3000) para verlo.
 
 La pagina se actualiza con cada cambio y mostrara los errores.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
