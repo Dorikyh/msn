@@ -6,33 +6,39 @@ const teamData: Testimonial[] = [
   {
     id: 1,
     name: "Rodsac",
-    designation: "Founder @TailGrids",
-    image: "/images/testimonials/auth-01.png",
+    designation: "@Rodsac",
+    image: "/images/team/rodsac.jpg",
 
   },
   {
     id: 2,
     name: "keisyvg_",
-    designation: "Founder @UIdeck",
-    image: "/images/testimonials/auth-02.png",
+    designation: "@keisyvg_",
+    image: "/images/team/key.jpg",
   },
   {
     id: 3,
     name: "Keynner Santiago",
-    designation: "keynner_sm",
-    image: "/images/testimonials/auth-03.png",
+    designation: "@keynner_sm",
+    image: "/images/team/notfound.jpg",
   },
   {
     id: 4,
     name: "Luis Ortega",
-    designation: "russo_180",
-    image: "/images/testimonials/auth-03.png",
+    designation: "@russo_180",
+    image: "/images/team/notfound.jpg",
   },
   {
-    id: 4,
+    id: 5,
     name: "Juan Diaz",
-    designation: "juanda._._xd",
-    image: "/images/testimonials/auth-03.png", 
+    designation: "@juanda._._xd",
+    image: "/images/team/notfound.jpg", 
+  },
+  {
+    id: 5,
+    name: "Fabian Marquez",
+    designation: "@Dorikyh",
+    image: "/images/team/notfound.jpg", 
   },
 ];
 
@@ -41,8 +47,8 @@ const Team = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Development Team"
+          paragraph="The best team of the world."
           center
         />
 
