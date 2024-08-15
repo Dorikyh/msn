@@ -3,7 +3,7 @@ const SectionTitle = ({
   paragraph,
   width = "570px",
   center,
-  mb = "100px",
+  mb = "50px",
 }: {
   title: string;
   paragraph: string;
@@ -14,7 +14,7 @@ const SectionTitle = ({
   return (
     <>
       <div
-        className={`w-full ${center ? "mx-auto text-center" : ""}`}
+        className={`w-full ${center ? "mx-auto text-center mt-14" : ""}`}
         style={{ maxWidth: width, marginBottom: mb }}
       >
         <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
