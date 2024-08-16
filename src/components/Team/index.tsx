@@ -41,8 +41,8 @@ const teamData: Testimonial[] = [
   },
   {
     id: 6,
-    name: "Adalbergt H",
-    instagram: "@zuck",
+    name: "Adalbergt Hernandez",
+    instagram: "@adal_vfx",
     image: "/images/team/notfound.jpg", 
     designation: "3D Designer"
   },  
