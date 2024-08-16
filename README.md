@@ -11,14 +11,14 @@ ya que es algo que se esta empezando a ver en mayor cantidad alrededor del mundo
 Con el fin de mejorar la seguridad de tus mascotas , tambien la salud de las mismas implementandos sensores cardiacos como ejemplo.
 
 # Quienes son los creadores de MSN?
-Joaquin Osio (CEO) 
-Keisy Gonzales (CMO)
-Keynner Mendoza (CTO) 
-Juan David Diaz (COO)
+Joaquin Osio (CEO) //
+Keisy Gonzales (CMO) //
+Keynner Mendoza (CTO) // 
+Juan David Diaz (COO) //
 Luis Russo (CFO)
 
 Collabs 
-Fabian Marquez (Dev)
+Fabian Marquez (Dev) // 
 Adalbergt Hernández (3D Desinger)
 
 ### `npm run dev`
