@@ -44,7 +44,7 @@ const teamData: Testimonial[] = [
     name: "Adalbergt H",
     instagram: "@zuck",
     image: "/images/team/notfound.jpg", 
-    designation: "3D"
+    designation: "3D Designer"
   },  
 {
     id: 7,
