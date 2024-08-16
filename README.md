@@ -19,7 +19,7 @@ Luis Russo (CFO)
 
 Collabs 
 Fabian Marquez (Dev) // 
-Adalbergt Hernández (3D Desinger)
+Adalbergt Hernández (3D Designer)
 
 ### `npm run dev`
 
