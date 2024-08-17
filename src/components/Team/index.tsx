@@ -57,11 +57,11 @@ const teamData: Testimonial[] = [
 
 const Team = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-6 md:py-12 lg:py-12">
       <div className="container">
         <SectionTitle
           title="Development Team"
-          paragraph="The best team of the world."
+          paragraph="The best team of the world"
           center
         />
 
