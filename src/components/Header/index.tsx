@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <header
-        className="header sticky top-0 left-0 z-40 flex w-full items-center bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark p-4 md:p-2"
+        className="header fixed top-0 left-0 z-40 flex w-full items-center bg-white !bg-opacity-80 shadow-fixed backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-fixed-dark p-4 md:p-2"
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">

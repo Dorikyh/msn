@@ -3,46 +3,27 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "About",
     path: "/",
     newTab: false,
   },
   {
     id: 2,
-    title: "About",
-    path: "/about",
-    newTab: false,
-  },
-  {
-    id: 33,
     title: "Blog",
     path: "/blog",
     newTab: false,
   },
   {
-    id: 4,
+    id: 3,
     title: "Team",
     path: "/team",
     newTab: false,
   },
   {
-    id: 5,
-    title: "Pages",
+    id: 4,
+    title: "Dashboard",
+    path: "/dashboard",
     newTab: false,
-    submenu: [
-      {
-        id: 51,
-        title: "About Page",
-        path: "/about",
-        newTab: false,
-      },
-      {
-        id: 53,
-        title: "Blog Grid Page",
-        path: "/blog",
-        newTab: false,
-      },
-    ],
   },
 ];
 export default menuData;

@@ -6,7 +6,7 @@ const teamData: Testimonial[] = [
   {
     id: 1,
     name: "Joaquin Osio",
-    instagram: "@Rodsac",
+    instagram: "Rodsac",
     image: "/images/team/rodsac.jpg",
     designation: "CEO"
 
@@ -14,42 +14,42 @@ const teamData: Testimonial[] = [
   {
     id: 2,
     name: "Keisy Gonzales",
-    instagram: "@keisyvg_",
+    instagram: "keisyvg_",
     image: "/images/team/key.jpg",
     designation: "CMO"
   },
   {
     id: 3,
     name: "Keynner S",
-    instagram: "@keynner_sm",
+    instagram: "keynner_sm",
     image: "/images/team/notfound.jpg",
     designation: "CTO"
   },
   {
     id: 4,
     name: "Luis Russo",
-    instagram: "@russo_180",
+    instagram: "russo_180",
     image: "/images/team/notfound.jpg",
     designation: "COO"
   },
   {
     id: 5,
     name: "Juan David",
-    instagram: "@juanda._._xd",
+    instagram: "juanda._._xd",
     image: "/images/team/notfound.jpg", 
     designation: "COO"
   },
   {
     id: 6,
     name: "Adalbergt Hernandez",
-    instagram: "@adal_vfx",
+    instagram: "adal_vfx",
     image: "/images/team/notfound.jpg", 
     designation: "3D Designer"
   },  
 {
     id: 7,
     name: "Fabian Marquez",
-    instagram: "@Dorikyh",
+    instagram: "Dorikyh",
     image: "/images/team/dorikyh.jpg", 
     designation: "Dev"
   },

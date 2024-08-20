@@ -1,3 +1,4 @@
+const { nextui } = require("@nextui-org/theme");
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
 
@@ -6,6 +7,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/[object Object].js",
   ],
   darkMode: "class",
   theme: {
@@ -39,10 +41,11 @@ module.exports = {
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#121723",
-        dark: "#1D2430",
-        primary: "#4A6CF7",
+        dark: "#131211",
+        primary: "#f18927",
+        red: "#FF6961",
         yellow: "#FBB040",
-        "bg-color-dark": "#171C28",
+        "bg-color-dark": "#181716",
         "body-color": {
           DEFAULT: "#788293",
           dark: "#959CB1",
@@ -53,8 +56,8 @@ module.exports = {
         },
         gray: {
           ...colors.gray,
-          dark: "#1E232E",
-          light: "#F0F2F9",
+          dark: "#181716",
+          light: "#dbd9d6",
         },
       },
 
@@ -77,5 +80,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
