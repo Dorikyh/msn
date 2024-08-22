@@ -6,7 +6,7 @@ const teamData: Testimonial[] = [
   {
     id: 1,
     name: "Joaquin Osio",
-    instagram: "Rodsac",
+    instagram: "r.o.d.s.a.c",
     image: "/images/team/rodsac.jpg",
     designation: "CEO"
 
