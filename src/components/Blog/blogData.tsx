@@ -3,45 +3,45 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Sección de blog en duda",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Será que dejamos esto?.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "Joaquín Osio (CEO)",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "Owner",
     },
     tags: ["creative"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "In Progress...",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Changing this things...",
     image: "/images/blog/blog-02.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "Develop Team",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "Developer",
     },
     tags: ["computer"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "In Progress...",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "In Progress...",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "Develop Team",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "Developer",
     },
     tags: ["design"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
 ];
 export default blogData;
