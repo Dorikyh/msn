@@ -1,8 +1,8 @@
-import { Testimonial } from "@/types/testimonial";
+import { Member } from "@/types/member";
 import SectionTitle from "../Common/SectionTitle";
 import Single from "./single";
 
-const teamData: Testimonial[] = [
+const teamData: Member[] = [
   {
     id: 1,
     name: "Joaquin Osio",
@@ -66,8 +66,8 @@ const Team = () => {
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {teamData.map((testimonial) => (
-            <Single key={testimonial.id} testimonial={testimonial} />
+          {teamData.map((member) => (
+            <Single key={member.id} member={member} />
           ))}
         </div>
       </div>

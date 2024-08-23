@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaUser } from "react-icons/fa";
+import { MdSpaceDashboard } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -12,10 +13,10 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <div className="relative w-full h-full">
           <Image
-            src="https://media.discordapp.net/attachments/1268670062580203641/1274495214970601483/dog.webp?ex=66c275aa&is=66c1242a&hm=d8d494006949704e611e222325fe1623f19b481e910b0932611143c7b3fffe3b&=&format=webp&width=640&height=426"
+            src="/images/dog.webp"
             alt="Dog background"
-            fill
-            style={{ objectFit: "cover" }}
+            fill // Use fill to make the image cover the container
+            style={{ objectFit: "cover", objectPosition: "center" }} // Center the image and cover the container
             quality={100}
             className="blur-sm"
           />
@@ -25,28 +26,28 @@ const Hero = () => {
 
       <div className="container relative z-10">
         <div className="flex justify-center">
-          <div className="w-full px-4">
+          <div className="w-full">
             <div className="mx-auto max-w-[800px] text-center">
-              <h1 className="mb-1 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Mobile Security Necklace
+              <h1 className="text-5xl font-extrabold sm:text-4xl sm:leading-tight md:text-7xl md:leading-tight bg-gradient-to-r from-primary to-amber-700 bg-clip-text text-transparent">
+                Mobile Security Necklace.
               </h1>
-              <p className="mb-6 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                The security your pets need, right at your fingertips with our smart collar
+              <p className="mb-6 !leading-relaxed text-gray-300 dark:text-body-color-dark sm:text-lg md:text-xl">
+                The security your pets need
               </p>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <Link
-                  href="/"
+                  href="/dashboard"
                   className="flex items-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
-                  <FaYoutube className="mr-2 text-xl" />
-                  Watch Demo
+                  <MdSpaceDashboard className="mr-2 text-xl" />
+                  Dashboard
                 </Link>
                 <Link
-                  href="https://www.instagram.com/msn_fblanca"
-                  className="flex items-center rounded-lg bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                  href="/team"
+                  className="flex items-center rounded-lg bg-gray-400 bg-opacity-50 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 bg-white/10 text-white hover:bg-white/5"
                 >
-                  <FaInstagram className="mr-2 text-xl" />
-                  Follow us
+                  <FaUser className="mr-2 text-xl" />
+                  Team
                 </Link>
               </div>
             </div>

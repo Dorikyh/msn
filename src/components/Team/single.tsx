@@ -1,10 +1,10 @@
-import { Testimonial } from "@/types/testimonial";
+import { Member } from "@/types/member";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 
 
-const Single = ({ testimonial }: { testimonial: Testimonial }) => {
-  const { name, image, instagram, designation } = testimonial;
+const Single = ({ member }: { member: Member }) => {
+  const { name, image, instagram, designation } = member;
 
   return (
     <div

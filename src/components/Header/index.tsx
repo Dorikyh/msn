@@ -4,6 +4,7 @@ import { FaShieldDog } from "react-icons/fa6";
 import Link from "next/link";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { MdSpaceDashboard } from "react-icons/md";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,11 +27,12 @@ const Header = () => {
               </div>
             </a>
             <div className="flex w-full items-center justify-between px-4">
-              <div>
+              <div className="flex items-center space-x-4">
                 {/* Botón para alternar el menú */}
                 <button
                   onClick={toggleMenu}
                   className="lg:hidden p-2 text-dark dark:text-white"
+                  style={{ margin: '0 8px' }} // Fixed margin for mobile
                 >
                   {/* Icono de menú */}
                   <svg
@@ -99,21 +101,16 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end">
+              <div className="flex items-center space-x-4">
                 <Link
-                  href="/"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                  href="/dashboard"
+                  className="hidden lg:flex items-center ease-in-up shadow-btn hover:shadow-btn-hover rounded-lg bg-primary p-3 text-base font-bold text-white transition duration-300 hover:bg-opacity-90"
                 >
-                  Follow us
+                  <MdSpaceDashboard className="text-xl" />
+                  <span className="ml-2">Dashboard</span>
                 </Link>
-                <Link
-                  href="/"
-                  className="font-extrabold ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-lg bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Demo
-                </Link>
-                <div>
-                  <ThemeToggler />
+                <div className="flex items-center">
+                  <ThemeToggler /> 
                 </div>
               </div>
             </div>

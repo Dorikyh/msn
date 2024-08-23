@@ -40,10 +40,10 @@ module.exports = {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
-        black: "#121723",
+        black: "#131211",
         dark: "#131211",
         primary: "#f18927",
-        red: "#FF6961",
+        blood: "#FF6961",
         yellow: "#FBB040",
         "bg-color-dark": "#181716",
         "body-color": {

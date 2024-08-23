@@ -1,4 +1,4 @@
-export type Testimonial = {
+export type Member = {
   id: number;
   name: string;
   designation: string;
