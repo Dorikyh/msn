@@ -1,6 +1,7 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
+import React from "react";
 
 function RegisterPage() {
   const {
@@ -51,7 +52,7 @@ function RegisterPage() {
             },
           })}
           className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
-          placeholder="yourUser123"
+          placeholder="username"
         />
 
         {errors.username && (
@@ -90,7 +91,7 @@ function RegisterPage() {
             },
           })}
           className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
-          placeholder="********"
+          placeholder="password"
         />
         {errors.password && (
           <span className="text-red-500 text-sm">
