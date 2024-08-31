@@ -22,7 +22,7 @@ const teamData: Member[] = [
     id: 3,
     name: "Keynner Gamboa",
     instagram: "keynner_sm",
-    image: "/images/team/notfound.jpg",
+    image: "/images/team/keynner.jpg",
     designation: "CTO"
   },
   {
@@ -36,7 +36,7 @@ const teamData: Member[] = [
     id: 5,
     name: "Juan David",
     instagram: "juanda._._xd",
-    image: "/images/team/notfound.jpg", 
+    image: "/images/team/juandavid.jpg", 
     designation: "COO"
   },
   {
