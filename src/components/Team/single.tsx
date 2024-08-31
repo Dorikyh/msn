@@ -9,7 +9,7 @@ const Single = ({ member }: { member: Member }) => {
   return (
     <div
       className={` w-full opacity-0 transition-opacity duration-1000 hover:opacity-100 ${
-        name === "Fabian Marquez" || name === "Adalbergt H" ? "opacity-0 transition-opacity duration-1000 hover:opacity-100" : "opacity-100"
+        name === "" || name === "Adalbergt H" ? "opacity-0 transition-opacity duration-1000 hover:opacity-100" : "opacity-100"
       }`} 
     >
       <div className="rounded-lg bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
