@@ -142,7 +142,8 @@ const ErrorPage = () => {
                   </svg>
                 </div>
                 <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
-                  Sorry, the page can’t be found
+                  Esta pagina no existe o esta en desarrollo , ve y da una vuelta por 
+                  otro lado 😉
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   The page you were looking for appears to have been moved,
