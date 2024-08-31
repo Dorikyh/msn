@@ -13,7 +13,7 @@
 <h2>Quienes son los creadores de MSN?</h2>
 <ul>
     <li>Joaquin Osio (CEO) </li>
-    <li>Keisy Gonzales (CMO) </li>
+    <li>Keisy Gonzales (CEO / CMO) </li>
     <li>Keynner Mendoza (CTO) </li>
     <li>Juan David Diaz (COO)</li> 
     <li>Luis Russo (CFO)</li>
