@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-6 text-xl font-bold text-black dark:text-white">
-                  Useful Links
+                  Links de Ayuda
                 </h2>
                 <ul>
                   <li>
@@ -55,7 +55,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      Sobre Nosotros
                     </Link>
                   </li>
                   <li>
@@ -63,7 +63,7 @@ const Footer = () => {
                       href="/team"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Team
+                      Nuestro Equipo
                     </Link>
                   </li>
                 </ul>
@@ -74,14 +74,14 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Project developed by{" "}
+              Proyecto Desarrollado Por {" "}
               <a
                 href="http://msn-web.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                MSN
+                Equipo M.S.N
               </a>
             </p>
           </div>
