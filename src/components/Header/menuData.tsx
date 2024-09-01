@@ -3,7 +3,7 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "About",
+    title: "Sobre Nosotros",
     path: "/",
     newTab: false,
   },
@@ -15,7 +15,7 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Team",
+    title: "Equipo",
     path: "/team",
     newTab: false,
   },
