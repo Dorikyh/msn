@@ -34,9 +34,4 @@
     <li>Anadir los cambios al stage: <code>git add .</code></li>
     <li>Realizar el commit: <code>git commit -m "feat: descripcion del cambio"</code></li>
     <li>Publicar los cambios: <code>git push</code></li>
-
-<h2>Contacto<h2>
-  <ul>
-     <li> Correo: rodsac.ubu@gmail.com <li>
-     <li> Instagram: r.o.d.s.a.c (<a href="https://www.instagram.com/r.o.d.s.a.c/">) <li>
-     <li> Discord: rodsac <li>
+    
