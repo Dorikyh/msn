@@ -8,8 +8,8 @@ const Features = () => {
       <section id="features" className="py-8 md:py-12 lg:py-16">
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="Read or best featurest you can get with our special collar"
+            title="Caracteristicas Principales"
+            paragraph="Las caracteristicas principales mas destacadas de M.S.N"
             center
           />
 
