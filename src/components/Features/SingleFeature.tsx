@@ -1,5 +1,6 @@
 import { Feature } from "@/types/feature";
 
+
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph } = feature;
   return (
@@ -13,7 +14,6 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             {title}
           </h3>
         </div>
-
 
         <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
           {paragraph}

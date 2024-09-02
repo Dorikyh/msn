@@ -19,16 +19,17 @@
     "module": "esnext",
     "moduleResolution": "node",
     "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/components/*"],
+      "@/libs/*": ["src/libs/*"],
+      "@/types/*": ["src/types/*"] // Added path for types
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "baseUrl": ".", 
-    "paths": {       
-      "@/components/*": ["src/components/*"],
-      "@/libs/*": ["src/libs/*"] // Add this line
-    }
+    ]
   },
   "include": [
     "next-env.d.ts",

@@ -55,7 +55,7 @@ function RegisterPage() {
           placeholder="username"
         />
 
-        {errors.username && (
+        {errors.username?.message && typeof errors.username.message === "string" && (
           <span className="text-red-500 text-xs">
             {errors.username.message}
           </span>
@@ -75,7 +75,7 @@ function RegisterPage() {
           className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
           placeholder="user@email.com"
         />
-        {errors.email && (
+        {errors.email?.message && typeof errors.email.message === "string" && (
           <span className="text-red-500 text-xs">{errors.email.message}</span>
         )}
 
@@ -93,7 +93,7 @@ function RegisterPage() {
           className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
           placeholder="password"
         />
-        {errors.password && (
+        {errors.password?.message && typeof errors.password.message === "string" && (
           <span className="text-red-500 text-sm">
             {errors.password.message}
           </span>
@@ -116,7 +116,7 @@ function RegisterPage() {
           className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
           placeholder="********"
         />
-        {errors.confirmPassword && (
+        {errors.confirmPassword?.message && typeof errors.confirmPassword.message === "string" && (
           <span className="text-red-500 text-sm">
             {errors.confirmPassword.message}
           </span>
@@ -129,4 +129,5 @@ function RegisterPage() {
     </div>
   );
 }
+
 export default RegisterPage;

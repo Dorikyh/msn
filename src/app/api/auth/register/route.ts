@@ -1,8 +1,8 @@
-import { NextResponse } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import bcrypt from "bcrypt";
 import db from "@/libs/db";
 
-export async function POST(request) {
+export async function POST(request: NextRequest) {
   try {
     const data = await request.json();
 
@@ -32,7 +32,7 @@ export async function POST(request) {
     if (usernameFound) {
       return NextResponse.json(
         {
-          message: "username already exists",
+          message: "Username already exists",
         },
         {
           status: 400,
@@ -53,9 +53,10 @@ export async function POST(request) {
 
     return NextResponse.json(user);
   } catch (error) {
+    // Assert error type as Error
     return NextResponse.json(
       {
-        message: error.message,
+        message: (error as Error).message,
       },
       {
         status: 500,

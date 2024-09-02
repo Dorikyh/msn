@@ -1,9 +1,10 @@
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import db from '@/libs/db';
 import bcrypt from 'bcrypt';
+import { User } from "next-auth";
 
-export const authOptions = {
+const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -32,11 +33,12 @@ export const authOptions = {
 
         if (!matchPassword) throw new Error('Wrong password');
 
+        // Ensure that the returned object matches the User type
         return {
-          id: userFound.id,
+          id: userFound.id.toString(), // Convert id to string if needed
           name: userFound.username,
           email: userFound.email,
-        };
+        } as User; // Explicitly type as User
       },
     }),
   ],
@@ -47,5 +49,5 @@ export const authOptions = {
 
 const handler = NextAuth(authOptions);
 
-// Exporting the handler functions
+// Exporting the handler functions for GET and POST methods
 export { handler as GET, handler as POST };
