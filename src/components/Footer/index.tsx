@@ -22,10 +22,10 @@ const Footer = () => {
                   The security your pets need
                 </p>
                 <div className="flex items-center text-2xl">
-                <Link href="/" className="mr-4">
+                <Link href="https://x.com/MSN_fblanca?t=JkwopBQYSXMhL7DTpgDEQQ&s=09" className="mr-4">
                     <FaXTwitter />
                 </Link>
-                <Link href="/" className="mr-4">
+                <Link href="https://www.instagram.com/msn_fblanca?igsh=MWYxNHBvZ3dpNHZvdA==" className="mr-4">
                     <FaInstagram />
                   </Link>
                   <Link href="/">
