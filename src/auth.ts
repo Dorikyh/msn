@@ -1,22 +1,52 @@
 import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
+import CredentialsProvider from "next-auth/providers/credentials";
+import db from '@/libs/db';
+import bcrypt from 'bcrypt';
 
-const googleClientId = process.env.GOOGLE_CLIENT_ID;
-const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET;
-const nextAuthSecret = process.env.NEXTAUTH_SECRET;
-
-if (!googleClientId || !googleClientSecret || !nextAuthSecret) {
-  throw new Error("Missing environment variables for authentication");
+interface User {
+  id: string;
+  name: string;
+  email: string;
 }
 
-export const authOptions = {
+const authOptions = {
   providers: [
-    GoogleProvider({
-      clientId: googleClientId,
-      clientSecret: googleClientSecret,
+    CredentialsProvider({
+      name: "Credentials",
+      credentials: {
+        email: { label: "Email", type: "text", placeholder: "jsmith" },
+        password: { label: "Password", type: "password", placeholder: "*****" },
+      },
+      async authorize(credentials): Promise<User | null> {
+        if (!credentials) {
+          return null; // Cambiado a null si no se proporcionan credenciales
+        }
+
+        const userFound = await db.user.findUnique({
+          where: {
+            email: credentials.email,
+          },
+        });
+
+        if (!userFound) return null;
+
+        const matchPassword = await bcrypt.compare(credentials.password, userFound.password);
+
+        if (!matchPassword) return null;
+
+        return {
+          id: userFound.id.toString(), // Convertir el ID a string
+          name: userFound.username,
+          email: userFound.email,
+        };
+      },
     }),
   ],
-  secret: nextAuthSecret,
+  pages: {
+    signIn: "/auth/login",
+  },
 };
 
-export default NextAuth(authOptions);
+const handler = NextAuth(authOptions);
+
+export { handler as GET, handler as POST };

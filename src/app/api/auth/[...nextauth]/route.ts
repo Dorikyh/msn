@@ -4,7 +4,7 @@ import db from '@/libs/db';
 import bcrypt from 'bcrypt';
 
 interface User {
-  id: string; // Asegúrate de que el tipo sea 'string'
+  id: string;
   name: string;
   email: string;
 }
@@ -19,7 +19,7 @@ const authOptions = {
       },
       async authorize(credentials): Promise<User | null> {
         if (!credentials) {
-          throw new Error('No credentials provided');
+          return null; // Cambiado a null si no se proporcionan credenciales
         }
 
         const userFound = await db.user.findUnique({
@@ -28,15 +28,14 @@ const authOptions = {
           },
         });
 
-        if (!userFound) return null; // Cambiado a `null` si no se encuentra el usuario
+        if (!userFound) return null;
 
         const matchPassword = await bcrypt.compare(credentials.password, userFound.password);
 
-        if (!matchPassword) return null; // Cambiado a `null` si la contraseña no coincide
+        if (!matchPassword) return null;
 
-        // Asegúrate de que el `id` sea una cadena de texto
         return {
-          id: userFound.id.toString(), // Convertir `id` a `string`
+          id: userFound.id.toString(), // Convertir el ID a string
           name: userFound.username,
           email: userFound.email,
         };
