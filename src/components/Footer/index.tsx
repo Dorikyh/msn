@@ -76,7 +76,7 @@ const Footer = () => {
             <p className="text-center text-base text-body-color dark:text-white">
               Proyecto Desarrollado Por {" "}
               <a
-                href="https://www.instagram.com/msn_fblanca?igsh=MWYxNHBvZ3dpNHZvdA=="
+                href="https://msn-web.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
