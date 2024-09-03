@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState } from "react";
 import { FaShieldDog } from "react-icons/fa6";
 import Link from "next/link";
@@ -27,7 +26,7 @@ const Header = () => {
   return (
     <>
       <header
-        className="header fixed top-0 left-0 z-40 flex w-full items-center bg-white !bg-opacity-80 shadow-fixed backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-fixed-dark p-4 md:p-2"
+        className="header sticky top-0 left-0 z-40 flex w-full items-center bg-white !bg-opacity-80 shadow-fixed backdrop-blur-sm dark:bg-gray-dark dark:shadow-fixed-dark p-4 md:p-2"
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
@@ -42,8 +41,7 @@ const Header = () => {
                 {/* Button to toggle the menu */}
                 <button
                   onClick={toggleMenu}
-                  className="lg:hidden p-2 text-dark dark:text-white"
-                  style={{ margin: '0 8px' }} // Fixed margin for mobile
+                  className="lg:hidden p-2 text-dark dark:text-white z-50"
                 >
                   {/* Menu Icon */}
                   <svg
@@ -63,9 +61,10 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-40 w-[250px] rounded-lg border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     isMenuOpen ? "block" : "hidden lg:block"
                   }`}
+                  style={{ top: '100%', right: 0 }} // Ensure the dropdown is positioned correctly
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
@@ -93,7 +92,7 @@ const Header = () => {
                               </span>
                             </p>
                             {menuItem.submenu && (
-                              <div className="submenu relative left-0 top-full rounded-lg bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                              <div className="submenu absolute left-0 top-full rounded-lg bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
                                 {menuItem.submenu.map((submenuItem, submenuIndex) =>
                                   submenuItem.path ? (
                                     <Link

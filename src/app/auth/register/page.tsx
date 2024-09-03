@@ -36,8 +36,8 @@ function RegisterPage() {
   console.log(errors);
 
   return (
-    <div className="h-[calc(100vh-7rem)] flex justify-center items-center">
-      <form onSubmit={onSubmit} className="w-1/4">
+    <div className="flex justify-center items-center">
+      <form onSubmit={onSubmit} className="">
         <h1 className="text-slate-200 font-bold text-4xl mb-4">Register</h1>
 
         <label htmlFor="username" className="text-slate-500 mb-2 block text-sm">

@@ -1,18 +1,35 @@
-"use client"
-import {signOut} from 'next-auth/react'
+"use client";
 
-function DashboardPage() {
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+
+
+
+const DashboardPage = () => {
+  const { status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === 'loading') {
+      return;
+    }
+
+    if (status === 'unauthenticated') {
+      router.push('/auth/login');
+    }
+  }, [status, router]);
+
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <section className="h-[calc(100vh-7rem)] flex justify-center items-center">
-      <div>
-        <h1 className="text-white text-5xl">Dashboard</h1>
-        <button className="bg-white text-black px-4 py-2 rounded-md mt-4"
-          onClick={() => signOut()}
-        >
-          Logout
-        </button>
-      </div>
-    </section>
-  )
-}
-export default DashboardPage
+      <section className="flex flex-col items-center justify-center min-h-screen">
+        <h1 className="text-3xl font-bold mb-6">Welcome to the Dashboard</h1>
+
+      </section>
+  );
+};
+
+export default DashboardPage;

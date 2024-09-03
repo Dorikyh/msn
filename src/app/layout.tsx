@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import "../styles/index.css";
 import { Providers } from "./providers";
-
+import { SessionProvider } from "next-auth/react";
 
 export default function RootLayout({
   children,
@@ -13,20 +13,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html suppressHydrationWarning lang="es">
       <head />
-
       <body className={`bg-[#FCFCFC] dark:bg-black`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </Providers>
+        <SessionProvider>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </Providers>
+        </SessionProvider>
       </body>
     </html>
   );

@@ -32,14 +32,14 @@ function LoginPage() {
   });
 
   return (
-    <div className="h-[calc(100vh-7rem)] flex justify-center items-center">
-      <form onSubmit={onSubmit} className="w-1/4">
+    <div className="my-16 flex justify-center items-center">
+      <form onSubmit={onSubmit} className="">
 
         {error && (
           <p className="bg-red-500 text-lg text-white p-3 rounded mb-2">{error}</p>
         )}
 
-        <h1 className="text-slate-200 font-bold text-4xl mb-4">Login</h1>
+        <h1 className="text-slate-200 font-bold text-center text-4xl mb-4">Login</h1>
 
         <label htmlFor="email" className="text-slate-500 mb-2 block text-sm">
           Email:
@@ -52,7 +52,7 @@ function LoginPage() {
               message: "Email is required",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded-lg block mb-2 bg-semidark text-slate-300 w-full"
           placeholder="user@email.com"
         />
 
@@ -71,7 +71,7 @@ function LoginPage() {
               message: "Password is required",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded-lg block mb-2 bg-semidark text-slate-300 w-full"
           placeholder="******"
         />
 
@@ -81,7 +81,7 @@ function LoginPage() {
           </span>
         )}
 
-        <button className="w-full bg-blue-500 text-white p-3 rounded-lg mt-2">
+        <button className="w-full bg-primary font-bold text-white p-3 rounded-lg mt-2">
           Login
         </button>
       </form>

@@ -1,5 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// prisma/schema.prisma
 
 generator client {
   provider = "prisma-client-js"
@@ -17,4 +16,14 @@ model User {
   password String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  pets Pet[] // Relación uno a muchos con el modelo Pet
+}
+
+model Pet {
+  id Int @id @default(autoincrement())
+  name String
+  species String
+  age Int
+  ownerId Int // Relación con el modelo User
+  owner User @relation(fields: [ownerId], references: [id])
 }
