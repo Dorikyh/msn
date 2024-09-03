@@ -32,7 +32,7 @@ const Hero = () => {
                 Mobile Security Necklace.
               </h1>
               <p className="mb-6 !leading-relaxed text-gray-300 dark:text-body-color-dark sm:text-lg md:text-xl">
-                The security your pets need, in a unique necklane 😉
+                The security your pets need, in a unique and singular necklane 😉
               </p>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <Link
@@ -40,14 +40,14 @@ const Hero = () => {
                   className="flex items-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   <MdSpaceDashboard className="mr-2 text-xl" />
-                  Dashboard
+                  Dashboard 
                 </Link>
                 <Link
                   href="/team"
                   className="flex items-center rounded-lg bg-gray-400 bg-opacity-50 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 bg-white/10 text-white hover:bg-white/5"
                 >
                   <FaUser className="mr-2 text-xl" />
-                  Team
+                  Equipo 
                 </Link>
               </div>
             </div>
