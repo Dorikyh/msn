@@ -53,13 +53,6 @@ const teamData: Member[] = [
     image: "/images/team/dorikyh.jpg", 
     designation: "Dev"
   },
-  {
-    id: 8,
-    name: "Testing ",
-    instagram: "j4vn.bp",
-    image: "/images/team/notfound.jpg", 
-    designation: "Beta Tester"
-  },
 ];
 
 const Team = () => {
