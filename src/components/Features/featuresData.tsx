@@ -41,7 +41,7 @@ const featuresData: Feature[] = [
         <path d="M20 15C22.75 15 25 17.25 25 20C25 22.75 22.75 25 20 25C17.25 25 15 22.75 15 20C15 17.25 17.25 15 20 15ZM20 0C22.75 0 25 2.25 25 5C25 7.75 22.75 10 20 10C17.25 10 15 7.75 15 5C15 2.25 17.25 0 20 0ZM5 30C7.75 30 10 32.25 10 35C10 37.75 7.75 40 5 40C2.25 40 0 37.75 0 35C0 32.25 2.25 30 5 30ZM5 15C7.75 15 10 17.25 10 20C10 22.75 7.75 25 5 25C2.25 25 0 22.75 0 20C0 17.25 2.25 15 5 15ZM5 0C7.75 0 10 2.25 10 5C10 7.75 7.75 10 5 10C2.25 10 0 7.75 0 5C0 2.25 2.25 0 5 0ZM35 0C37.75 0 40 2.25 40 5C40 7.75 37.75 10 35 10C32.25 10 30 7.75 30 5C30 2.25 32.25 0 35 0Z" />
       </svg>
     ),
-    title: "Informacion Util",
+    title: "Informacion Eficente!",
     paragraph:
       "Nuestro collar les proporciona una valiosa informacion con datos en tiempo real y estadisticas completas. Puede acceder facilmente a informacion sobre los niveles de actividad de su mascota, el historial de ubicacion , y otras metricas claves  lo que lo ayuda a mantenerse informado y a tomar decisiones basadas en datos sobre su bienestar.",
   },
