@@ -1,5 +1,6 @@
 import { Feature } from "@/types/feature";
 
+
 const featuresData: Feature[] = [
   {
     id: 1,

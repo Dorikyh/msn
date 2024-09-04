@@ -1,0 +1,29 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  email String @unique
+  username String @unique
+  password String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  pets Pet[] // Relación uno a muchos con el modelo Pet
+}
+
+model Pet {
+  id Int @id @default(autoincrement())
+  name String
+  species String
+  age Int
+  ownerId Int // Relación con el modelo User
+  owner User @relation(fields: [ownerId], references: [id])
+}
