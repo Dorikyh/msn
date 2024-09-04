@@ -34,7 +34,7 @@ const teamData: Member[] = [
   },
   {
     id: 5,
-    name: "Juan David",
+    name: "WAwawa",
     instagram: "juanda._._xd",
     image: "/images/team/juandavid.jpg", 
     designation: "COO"
