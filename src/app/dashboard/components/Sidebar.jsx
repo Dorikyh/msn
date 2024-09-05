@@ -37,7 +37,7 @@ const Sidebar = () => {
         id="sidebar"
         className={`fixed inset-0 top-0 left-0 z-40 w-64 h-screen transition-transform transform ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } sm:translate-x-0 bg-semidark sm:sticky sm:h-screen`}
+        } sm:translate-x-0 dark:bg-semidark sm:sticky sm:h-screen`}
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto">

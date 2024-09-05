@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~leaflet/dist/leaflet.css";
+
+
 @layer base {
   body {
     font-family: "Inter", sans-serif;

@@ -23,7 +23,8 @@
     "paths": {
       "@/components/*": ["src/components/*"],
       "@/libs/*": ["src/libs/*"],
-      "@/types/*": ["src/types/*"] // Added path for types
+      "@/types/*": ["src/types/*"], // Added path for types
+      "@/app/*": ["src/app/*"],  // Añadir esta línea
     },
     "plugins": [
       {

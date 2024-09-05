@@ -1,5 +1,4 @@
-// src/app/api/auth/[...nextauth]/route.ts
-import NextAuth from "next-auth";
+// src/libs/authOptions.ts
 import CredentialsProvider from "next-auth/providers/credentials";
 import db from '@/libs/db';
 import bcrypt from 'bcrypt';
@@ -48,6 +47,4 @@ const authOptions = {
   },
 };
 
-const handler = NextAuth(authOptions);
-
-export { handler as GET, handler as POST };
+export default authOptions;
