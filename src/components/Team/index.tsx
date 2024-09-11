@@ -39,15 +39,8 @@ const teamData: Member[] = [
     image: "/images/team/juandavid.jpg", 
     designation: "COO"
   },
-  {
-    id: 6,
-    name: "Adalbergt Hernandez",
-    instagram: "adal_vfx",
-    image: "/images/team/notfound.jpg", 
-    designation: "3D Designer"
-  },  
 {
-    id: 7,
+    id: 6,
     name: "Fabian Marquez",
     instagram: "Dorikyh",
     image: "/images/team/dorikyh.jpg", 
