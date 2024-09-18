@@ -20,7 +20,7 @@ const teamData: Member[] = [
   },
   {
     id: 3,
-    name: "K",
+    name: "Keynner Gamboa",
     instagram: "keynner_sm",
     image: "/images/team/keynner.jpg",
     designation: "CTO"
