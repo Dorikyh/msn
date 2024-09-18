@@ -22,7 +22,6 @@
 <h3>Collabs</h3>
 <ul>
     <li>Fabian Marquez (Dev)</li>
-    <li>Adalbergt Hernández (3D Designer)</li>
 </ul>
 
 <h2>Pasos para realizar cambios</h2>
