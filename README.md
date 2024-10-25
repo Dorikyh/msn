@@ -1,16 +1,16 @@
-<h1 align="center">Mobile Security Necklane (MSN)</h1>
+<h1 align="center">Tracking and Guardian System (THS)</h1>
 <a href="https://msn-web.vercel.app"><img src="https://github.com/user-attachments/assets/4778332d-9554-4f44-ade9-10ca39ef15a5" alt="image"></a>
 <p align="center">Enlace de la pagina actual: <a href="https://msn-web.vercel.app">msn-web.vercel.app</a></p>
 
-<h2>Cual es la meta de MSN?</h2>
-<p>Lo que buscamos con MSN es mejorar la seguridad que tienen tus mascotas, esto con el fin de evitar el hurto de mascotas en la zona donde te encuentres ubicado, ya que es algo que se está empezando a ver en mayor cantidad alrededor del mundo.</p>
+<h2>Cual es la meta de TGS?</h2>
+<p>Lo que buscamos con TGS es mejorar la seguridad que tienen tus mascotas, esto con el fin de evitar el hurto de mascotas en la zona donde te encuentres ubicado, ya que es algo que se está empezando a ver en mayor cantidad alrededor del mundo.</p>
 
-<h2>Porque creamos MSN?</h2>
+<h2>Porque creamos TGS?</h2>
 <p>
     Con el fin de mejorar la seguridad de tus mascotas, también la salud de las mismas implementando sensores cardiacos como ejemplo.
 </p>
 
-<h2>Quienes son los creadores de MSN?</h2>
+<h2>Quienes son los creadores de TGS?</h2>
 <ul>
     <li>Joaquin Osio (CEO) </li>
     <li>Keisy Gonzales (CEO / CMO) </li>
