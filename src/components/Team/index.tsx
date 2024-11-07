@@ -16,7 +16,7 @@ const teamData: Member[] = [
     name: "Keisy Gonzales",
     instagram: "keisyvg_",
     image: "/images/team/key.jpg",
-    designation: "CMO"
+    designation: "CEO / CMO"
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const teamData: Member[] = [
     name: "Fabian Marquez",
     instagram: "Dorikyh",
     image: "/images/team/dorikyh.jpg", 
-    designation: "Dev"
+    designation: "Dev/Colab"
   },
 ];
 
