@@ -1,5 +1,5 @@
 <h1 align="center">Tracking and Guardian System (TGS)</h1>
-<h1 aling="center">   SENA PROYECTO ESCOLAR (CERRADO)</h1>
+<h1 aling="center">SENA PROYECTO ESCOLAR (CERRADO)</h1>
 <a href="https://msn-web.vercel.app"><img src="https://github.com/user-attachments/assets/4778332d-9554-4f44-ade9-10ca39ef15a5" alt="image"></a>
 <p align="center">Enlace de la pagina actual: <a href="https://msn-web.vercel.app">msn-web.vercel.app</a></p>
 
