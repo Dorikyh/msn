@@ -1,5 +1,5 @@
 <h1 align="center">Tracking and Guardian System (TGS)</h1>
-<h1 aling="center">SENA PROYECTO ESCOLAR (CERRADO)</h1>
+
 <a href="https://msn-web.vercel.app"><img src="https://github.com/user-attachments/assets/4778332d-9554-4f44-ade9-10ca39ef15a5" alt="image"></a>
 <p align="center">Enlace de la pagina actual: <a href="https://msn-web.vercel.app">msn-web.vercel.app</a></p>
 
@@ -35,3 +35,5 @@
     <li>Realizar el commit: <code>git commit -m "feat: descripcion del cambio"</code></li>
     <li>Publicar los cambios: <code>git push</code></li>
     
+<h2>Este Proyecto esta cerrado , si quieres mas informacion al respecto</h2>
+<h2>Escribeme por Github @Rodsac o por IG : @jo4co._17</h2>
