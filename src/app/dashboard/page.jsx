@@ -26,7 +26,7 @@ const DashboardPage = () => {
 
   return (
       <section className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-3xl font-bold mb-6">Welcome to the Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-6">Bienvenido al Dashboard de TGS</h1>
 
       </section>
   );

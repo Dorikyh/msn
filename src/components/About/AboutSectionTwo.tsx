@@ -28,18 +28,18 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Quality Security!
+                  Proyecto Cerrado
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Esta maricada tambien hay que ajustarla 
+                  porque sigues leyendo? esto cerro 
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  24/7 Support Online 
+                  ya viejo cortala 
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  esta maricada hay que ajustarla xd
+                  nmms que pendejo
                 </p>
               </div>
             
